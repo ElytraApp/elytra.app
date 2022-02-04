@@ -1,24 +1,18 @@
 title: Elytra Blog
-description: >- # this means to ignore newlines until "baseurl:"
-  Elytra is the simple and  RSS Reader. This blog publishes release notes, engineering and design details.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.elytra.app"
-
-twitter_username: 
-github_username: elytraapp
+description: Elytra is the simple and  RSS Reader. This blog publishes release notes, engineering and design details.
+url: https://blog.elytra.app
 
 author:
   name: Nikhil Nigade
   url: https://dezinezync.com
-  
+
 repo:
-  url: https://github.com/elytraapp/blog.elytra.app  
+  url: https://github.com/elytraapp/blog.elytra.app
 
 icon: /assets/images/icons/web/preview_300.png
 favicon: /assets/icons/favicon.png
 theme_color: "#fff"
 
-# Build settings
 markdown: kramdown
 permalink: /:year/:month/:title/
 sass:

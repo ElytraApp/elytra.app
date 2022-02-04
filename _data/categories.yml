@@ -1,0 +1,31 @@
+- id: about
+  title: About Elytra
+  description: Why Elytra exists and how it is different.
+    
+- id: webapp
+  title: Web App
+  description: Tips for using the Web App & UI Quirks.
+
+- id: ios
+  title: iOS App
+  description: Tips for using the iOS App & UI Quirks.
+
+- id: macos
+  title: macOS App
+  description: Tips for using the macOS App & UI Quirks.
+  
+- id: universal
+  title: Universal
+  description: Tips for using the iOS and macOS App & UI Quirks common across platforms.  
+
+# - id: blogs
+#   title: Blogs & Publishers
+#   description: Tips and suggestions for Blogs and Publishers.
+
+# - id: account
+#   title: Your Account
+#   description: Your account, your data and subscriptions. 
+
+# - id: rss-feeds
+#   title: RSS Feeds 
+#   description: Various topics about RSS Feeds, what they are, where to find them and more. 

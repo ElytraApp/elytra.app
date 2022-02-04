@@ -1,0 +1,14 @@
+- id: slack
+  title: "Slack"
+  url: https://join.slack.com/t/dzelytra/shared_invite/zt-dzvct3id-~io6HriB1OrQJ_Ib9Csw
+  description: Join our Slack group for discussing existing features, posting bug reports and news about the service.
+
+- id: blog
+  title: "Elytra FAQ"
+  url: https://faq.elytra.app
+  description: Frequently asked questions about Elytra and its app.
+
+- id: dezinezync
+  title: "dezinezync.com"
+  url: https://dezinezync.com
+  description: The blog of Elytra's founder, Nikhil Nigade.
