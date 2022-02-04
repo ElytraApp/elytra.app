@@ -15,8 +15,8 @@ theme_color: "#fff"
 
 markdown: kramdown
 permalink: /:year/:month/:title/
-sass:
-  style: compressed
+# sass:
+#  style: compressed
 
 defaults:
 - scope:
