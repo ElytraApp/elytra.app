@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post__header">
+    <h1 class="post__title">{{ page.title | smartify }}</h1>
+    {% if page.description %}
+    <p class="post__description">{{ page.description | smartify }}</p>
+    {% endif %}
+  </header>
+
+  <div class="prose">
+    {{content}}
+  </div>
+
+  {% if page.date %}
+  <footer class="post__footer">
+    <dl class="post__meta">
+      <div>
+        <dt>Published</dt>
+        <dd>{{ page.date | date:"%B %-d, %Y" }}</dd>
+      </div>
+      {% if page.updated %}
+      <div>
+        <dt>Updated</dt>
+        <dd>{{ page.updated | date:"%B %-d, %Y" }}</dd>
+      </div>
+      {% endif %}
+    </dl>
+    <p class="post__edit">Spotted a mistake? <a href="{{ page.path | prepend: '/edit/master/' | prepend: site.repo.url }}">Suggest a correction on GitHub</a>.
+  </footer>
+  {% endif %}
+</article>

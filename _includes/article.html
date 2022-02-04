@@ -1,0 +1,21 @@
+<li>
+  {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+  <a class="post-link" href="{{ post.url | relative_url }}">
+    <h2 class="post-title">{{ post.title | escape }}</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date">
+      <i class="far fa-calendar-alt"></i>
+      {{ post.date | date: date_format }}
+    </div>
+    <div class="horizontal">
+      {% include categories.html target=post %}
+      {% include tags.html target=post %}
+    </div>
+  </div>
+  <div class="post">
+    {%- if site.show_excerpts -%}
+      {{ post.excerpt }}
+    {%- endif -%}
+  </div>
+</li>
