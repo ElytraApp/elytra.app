@@ -1,0 +1,23 @@
+body {
+	line-height: 1.4;
+	background: rgb(252,252,250);
+	background: -apple-system-background;
+}
+
+a {
+	color: rgb(0, 122,255);
+	color: -apple-system-blue;
+}
+
+p, blockquote {
+	a {
+		text-decoration: none;
+	}
+}
+
+body > * {
+	width: 100%;
+	max-width: 640px;
+	max-width: 64ch;
+	margin: 0 auto;
+}

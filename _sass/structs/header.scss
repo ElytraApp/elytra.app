@@ -1,0 +1,14 @@
+header.banner {
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	
+	background: rgb(248,248,250);
+	background: -apple-system-secondary-background;
+	
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	border-bottom: 1px solid -apple-system-border;
+}
+
+@import "../components/logo";
+@import "../components/nav";
