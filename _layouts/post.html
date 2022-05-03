@@ -8,6 +8,12 @@ layout: default
     <p class="post__description">{{ page.description | smartify }}</p>
     {% endif %}
   </header>
+  
+{%- if post.cover -%}
+<div class="post-cover">
+	<img src="{{post.cover}}" />
+</div>
+{%- endif -%}
 
   <div class="prose">
     {{content}}

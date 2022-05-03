@@ -33,6 +33,15 @@ body > * {
 	margin: 0 auto;
 }
 
+.tag-header {
+	font-weight: normal;
+	color: rgb(120,120,125);
+	
+	em {
+		color: rgb(50,50,55);
+	}
+}
+
 @media only screen and (max-width:768px) {
 	body > * {
 		padding-left: 2rem;
