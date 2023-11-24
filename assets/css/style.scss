@@ -1,14 +1,203 @@
 ---
 ---
-// Resets
-@import "resets/jensimons";
-@import "resets/systemFonts";
 
-// Bases
-@import "bases/fonts";
+@import "{{ site.theme }}";
+@import "variables";
+@import "buttons";
+@import "layouts/grid";
 
-// Structures
-@import "structs/body";
-@import "structs/header";
-@import "structs/posts";
-@import "structs/footer";
+html {
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  quotes: "“" "”";
+}
+
+body {
+  font-size: 12.75pt;
+  line-height: 1.4;
+  color: var(--dz-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dz-title-color);
+}
+
+picture {
+  display: inline-block;
+  box-sizing: content-box;
+  object-fit: contain;
+
+  &.pad-bottom {
+    margin-bottom: 1rem;
+  }
+}
+
+.grid {
+  &.align-baseline {
+    align-items: baseline;
+  }
+}
+
+.linked, button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+header {
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  #logo-title {
+    display: inline-flex;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  span {
+    font-family: var(--font-family);
+  }
+
+  &.subhead {
+    color: var(--dz-subtitle-color);
+    line-height: 1.4;
+
+    span {
+      font-weight: 400;
+      color: inherit;
+    }
+  }
+}
+
+.caption {
+  color: var(--dz-subtext-color);
+}
+
+.container {
+  width: 1127px;
+}
+
+.container:not(.readable) {
+  max-width: 100vw; 
+}
+
+.container.readable {
+  max-width: 745px;
+}
+
+.container.center {
+  text-align: center;
+}
+
+footer {
+  margin-top: 2rem;
+
+  p {
+    font-size: 0.7rem;
+    color: var(--dz-color-subtext);
+    margin-bottom: 0.5rem;
+  }
+}
+
+body.blog {
+  header .container {
+    display: flex;
+    align-items: baseline;
+
+    nav {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  #footer-apple-disclaimer {
+    display: none;
+  }
+
+  footer p {
+    margin-bottom: 0.75rem;
+  }
+}
+
+body.home nav .container, body.blog header nav {
+  display: flex;
+  align-items: baseline;
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem 0 auto;
+
+    li {
+      list-style: none;
+      margin-right: 1rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &:first-of-type {
+      margin-left: auto;
+    }
+
+    &:last-of-type {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: var(--dz-title-color);
+      font-size: 0.8rem;
+    }
+  }
+
+  > .container a[role="button"], > a[role="button"] {
+    margin: 0;
+    padding: 4px 8px 6px;
+
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+    font-size: 0.8rem;
+    line-height: 1.0;
+
+    border: none;
+    height: auto;
+    min-height: unset;
+
+    border-radius: 1rem;
+  }
+}
+
+.card {
+  max-width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.03), 0 8px 24px 0 rgba(0,0,0,0.05);
+  border-radius: 40px;
+  padding: 40px;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  button, *[role="button"] {
+    &.black {
+      color: #1a1a1c;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    &.vault {
+      color: var(--dz-title-color);
+    }
+  }
+}
+
+@import "layouts/home";
+@import "layouts/blog";
+@import "layouts/support";
+@import "layouts/mac";
+@import "layouts/custom";

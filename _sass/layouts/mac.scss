@@ -1,0 +1,15 @@
+body.home.mac {
+  #mac-teaser {
+    filter: blur(4px);
+
+    .hero, img {
+      width: calc(100vw + 8px);
+      max-width: calc(100vw + 8px);
+    }
+
+    .hero {
+      position: relative;
+      left: -4px;
+    }
+  }
+}

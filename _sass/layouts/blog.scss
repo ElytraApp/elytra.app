@@ -1,0 +1,171 @@
+body.blog {
+  background: #fff;
+
+  --dz-background-color: #fff;
+
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+.post-list {
+  padding-left: 0;
+  margin-top: 1rem;
+  > li {
+    list-style: none;
+
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
+
+    .post-meta {
+      display: block;
+      color: var(--dz-subtext-color);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.rss-subscribe {
+  font-size: 0.8rem;
+  background: var(--dz-grouped-background-color);
+  display: inline-block;
+  border-radius: 5pt;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--dz-border-color);
+}
+
+article {
+  margin: 0 auto 1rem;
+  padding: 1rem 0;
+  box-shadow: none;
+  border-radius: 0;
+  background: var(--dz-background-color);
+
+  #post-banner {
+    // background: #333;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: auto;
+      max-width: unset;
+      height: 600px;
+    }
+  }
+
+  picture, img {
+    + h1, + h2, + h3, + h4, + h5, + h6 {
+      margin-top: 4rem;
+    }
+  }
+
+  hr + p {
+    margin-top: 1.5rem;
+  }
+
+  ul, ol {
+    margin-top: 1rem;
+  }
+
+  ul li {
+    list-style: unset;
+  }
+
+  li p {
+    margin-bottom: 0;
+  }
+}
+
+.page-post-content {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+img.fit-height {
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+  max-height: 600px;
+  display: block;
+}
+
+img.fit-height ~ p {
+  margin-top: 2rem;
+}
+
+video.player, video.ios-player {
+  margin-bottom: 2rem;
+}
+
+video.ios-player {
+  border-radius: 8pt;
+}
+
+.pagination {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+
+  a { font-weight: 500; }
+}
+
+code {
+  &[class*="lang-tag-"] {
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  }
+
+  &.lang-tag-watch {
+    // mint
+    color: rgb(0, 199, 190);
+  }
+
+  &.lang-tag-mac {
+    // cyan
+    color: rgb(50, 173, 230);
+  }
+
+  &.lang-tag-ios {
+    // indigo
+    color: rgb(88, 86, 214);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  body.blog {
+    .container {
+      max-width: 100vw;
+    }
+
+    header {
+      .container {
+        flex-direction: column;
+
+        nav {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  code {
+    &.lang-tag-watch {
+      // mint
+      color: rgb(99, 230, 226);
+    }
+
+    &.lang-tag-mac {
+      // cyan
+      color: rgb(100, 210, 255);
+    }
+
+    &.lang-tag-ios {
+      // indigo
+      color: rgb(94, 92, 230);
+    }
+  }
+}

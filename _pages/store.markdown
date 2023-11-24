@@ -1,0 +1,4 @@
+---
+layout: store
+permalink: /store/
+---

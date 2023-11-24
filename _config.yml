@@ -1,22 +1,43 @@
-title: Elytra Blog
-description: Elytra is the simple and  RSS Reader. This blog publishes release notes, engineering and design details.
-url: https://blog.elytra.app
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-author:
-  name: Nikhil Nigade
-  url: https://dezinezync.com
+title: Elytra
+email: support@elytra.app
+description: >- # this means to ignore newlines until "baseurl:"
+  Simple, private, and feature rich RSS feed reader for iOS, iPadOS, and macOS
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://elytra.app" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: elytra
+github_username:  elytra
+keywords: elytra,feeds,folders,smart,rss,json,xml,opml,appstore,iOS,iPadOS,Apple,iPhone,iPad
 
-repo:
-  url: https://github.com/elytraapp/blog.elytra.app
+# Build settings
+plugins:
+  - github-pages
+  - jekyll-paginate
 
-icon: /assets/images/icons/web/preview_300.png
-favicon: /assets/icons/favicon.png
-theme_color: "#fff"
+remote_theme: dezinezync/launchkit
 
-markdown: kramdown
-permalink: /:year/:month/:title/
-# sass:
-#  style: compressed
+permalink: /blog/:year-:month-:day/:title/
+
+include: ['_pages']  
 
 defaults:
 - scope:
@@ -35,12 +56,8 @@ defaults:
   values:
     layout: post
 
-plugins:
-  - jekyll-feed
+# Theme Settings
+caption: Simple, private, and feature rich RSS feed reader for iOS, iPadOS, and macOS
 
-exclude:
-- CNAME
-- Gemfile
-- Gemfile.lock
-- README.md
-- thanks.md
+paginate: 10
+paginate_path: /blog/page:num/

@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {%- if page.title -%}
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
+  {%- else -%}
+  <title>{{ site.title }}</title>
+  <meta property="og:title" content="{{ site.title }}" />
+  {%- endif -%}
+  {%- if page.description -%}
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description }}" />
+  {%- elsif page.excerpt -%}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip }}" />
+  {%- elsif page.content -%}
+  <meta name="description" content="{{ page.content | strip_html | truncatewords: 50 }}">
+  <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 50 }}" />
+  {%- else -%}
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}" />
+  {%- endif -%}
+  {%- if page.bannerImage -%}
+  <meta property="og:image" content="{{ page.bannerImage | append: '@2x.png' | absolute_url  }}" />
+  {%- elsif post.bannerImage -%}
+  <meta property="og:image" content="{{ post.bannerImage | append: '@2x.png' | relative_url }}" />
+  {%- else -%}
+  <meta property="og:image" content="{{ "/assets/images/headers/hero.jpg" | absolute_url }}" />
+  {%- endif -%}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="supported-color-schemes" content="light dark">
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
+  <link rel="me" href="https://social.dezinezync.com/@elytra"/>
+  <link rel="alternate" title="{{ site.title }}" type="application/rss+xml" href="{{ "/feed.xml"  | absolute_url}}"/>
+  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | absolute_url }}" />
+  <meta name="apple-itunes-app" content="app-id=1475098830, app-argument=https://apps.apple.com/in/app/elytra/id1433266971">
+  <link rel="icon" sizes="180x180" href="{{ "/assets/images/appicon/apple-touch-icon-180x180.png" | absolute_url }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/images/appicon/apple-touch-icon-180x180.png" | absolute_url }}" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/images/appicon/apple-touch-icon-152x152.png" | absolute_url }}" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "/assets/images/appicon/apple-touch-icon-76x76.png" | absolute_url }}" />
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ "/assets/images/appicon/apple-touch-icon-60x60.png" | absolute_url }}" />
+  <link rel="apple-touch-icon" href="{{ "/assets/images/appicon/apple-touch-icon.png" | absolute_url }}" />
+  {%- if page.keywords -%}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {%- elsif post.categories -%}
+  <meta name="keywords" content="{{ post.categories }}">
+  {%- else -%}
+  <meta name="keywords" content="{{ site.keywords }}">
+  {%- endif -%}
+  {%- if site.brandColor -%}
+  <style id="brand-color">
+    :root {
+      --dz-brand-color: {{ site.brandColor }};
+    }
+  </style>
+  {%- endif -%}
+</head>

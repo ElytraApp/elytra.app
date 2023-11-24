@@ -6,6 +6,6 @@ layout: null
     "title": {{ item.title | jsonify }},
     "description": {{ item.description | jsonify }},
     "content": {{ item.content | strip_html | strip_newlines | normalize_whitespace | jsonify }},
-    "url": {{ item | relative_url | jsonify }}
+    "url": {{ item | absolute_url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}]

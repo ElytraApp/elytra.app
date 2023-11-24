@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
+{%- include head.html -%}
+<body class="{% if page.style %}{{ page.style }}{% endif %}">
+  <header>
+    <div class="container">
+      <picture>
+        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x" width="200" height="200"/>
+        <source media="(max-width: 600px)" srcset="/assets/images/home/appicon-half.png 1x, /assets/images/home/appicon.png 2x">
+      </picture>
+      <h1 class="section-header-xl vault">Elytra</h1>
+      <h2 class="subhead"><span>{{ site.description }}</span></h2>
+    </div>
+
+    {%- include storebuttons.html -%}
+  </header>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>

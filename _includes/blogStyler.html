@@ -1,0 +1,13 @@
+<script>
+[...document.querySelectorAll("p code")].forEach(e => { 
+  if (e.textContent == "macOS") {
+    e.classList.add("lang-tag-mac")
+  }
+  else if (e.textContent == "iOS") {
+    e.classList.add("lang-tag-ios")
+  }
+  else if (e.textContent == "watchOS") {
+    e.classList.add("lang-tag-watch")
+  }
+}); 
+</script>

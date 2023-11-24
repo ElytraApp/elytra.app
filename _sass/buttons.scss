@@ -1,0 +1,32 @@
+button, *[role="button"] {
+  box-sizing: border-box;
+
+  &.black {
+    font-family: "VaultAlarm";
+    background-color: var(--dz-title-color);
+    border: none;
+
+    &:hover, &:target, &:focus {
+      filter: brightness(1.25);
+      box-shadow: 0 4px 12px rgba(0,0,0,.4);
+    }
+  }
+
+  &.rounded {
+    border-radius: 2rem;
+  }
+}
+
+a[role="button"] {
+  &:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  button, *[role="button"] {
+    &.black {
+      background-image: none;
+    }
+  }
+}

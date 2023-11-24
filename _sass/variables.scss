@@ -1,0 +1,20 @@
+:root {
+  --dz-background-color: #F2F2F3;
+  --dz-brand-color: #5856D6;
+  --dz-grouped-background-color: #f9f9fc;
+  --dz-border-color: #f1f1f5;
+  --dz-title-color: rgba(0,0,0,.8);
+  --dz-subtitle-color: rgba(0,0,0,.5);
+  --dz-text-color: rgba(0,0,0,.5);
+  --dz-border-color: rgba(0,0,0,.12);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root, :root:not([data-theme=light]) {
+    --color: #EFEFF0;
+    --dz-background-color: #2F3035;
+    --dz-grouped-background-color: #222328;
+    --dz-border-color: #373944;
+    --dz-brand-color: #5E5CE6;
+  }
+}
