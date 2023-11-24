@@ -47,7 +47,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture>
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-mac-dark.png 1x, /assets/images/home/screens-mac-dark@2x.png 2x, /assets/images/home/screens-mac-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-mac.png" srcset="/assets/images/home/screens-mac@2x.png 2x, /assets/images/home/screens-mac@3x.png 3x" width="1322" height="847" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS."/>
+                  <img src="/assets/images/home/screens-mac.png" srcset="/assets/images/home/screens-mac@2x.png 2x, /assets/images/home/screens-mac@3x.png 3x" width="1322" height="847" alt="Elytra for macOS"/>
                 </picture>
               </div>
             </div>
@@ -57,7 +57,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture style="display: block; text-align: center;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ios-dark.png 1x, /assets/images/home/screens-ios-dark@2x.png 2x, /assets/images/home/screens-ios-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-ios.png" srcset="/assets/images/home/screens-ios@2x.png 2x, /assets/images/home/screens-ios@3x.png 3x" width="430" height="537" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS."/>
+                  <img src="/assets/images/home/screens-ios.png" srcset="/assets/images/home/screens-ios@2x.png 2x, /assets/images/home/screens-ios@3x.png 3x" width="430" height="537" alt="Elytra for iOS"/>
                 </picture>
               </div>
             </div>
@@ -67,7 +67,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture style="display: block; text-align: center; vertical-align: bottom; position: relative; bottom: 500px;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ipad-dark.png 1x, /assets/images/home/screens-ipad-dark@2x.png 2x, /assets/images/home/screens-ipad-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="572" height="824" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS." />
+                  <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="572" height="824" alt="Elytra for iPadOS" />
                 </picture>
               </div>
             </div>
@@ -111,7 +111,7 @@ style: home
       </div>
       <div>
         <picture>
-          <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="503" height="237" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS."/>
+          <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="503" height="237" alt="Smart Folder editor window from Elytra for macOS"/>
         </picture>
       </div>
     </div>
