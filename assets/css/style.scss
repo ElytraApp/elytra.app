@@ -82,10 +82,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 1127px;
 }
 
-.container:not(.readable) {
-  max-width: 100vw; 
-}
-
 .container.readable {
   max-width: 745px;
 }
@@ -176,7 +172,7 @@ nav {
 
 .card {
   max-width: 100%;
-  background: #FFFFFF;
+  background: var(--dz-grouped-background-color);
   box-shadow: 0 6px 8px 0 rgba(0,0,0,0.03), 0 8px 24px 0 rgba(0,0,0,0.05);
   border-radius: 40px;
   padding: 40px;
@@ -189,10 +185,20 @@ nav {
     }
   }
 
+  .card {
+    
+  }
+
   h1, h2, h3, h4, h5, h6 {
     &.vault {
       color: var(--dz-title-color);
     }
+  }
+}
+
+@media (min-width: 1170px) {
+  .container:not(.readable) {
+    max-width: 100vw; 
   }
 }
 

@@ -12,7 +12,7 @@ style: home
     <p>Elytra renders all text natively using Apple’s TextKit techonologies enabling first-class support for various accessibility features.</p>
     <p>Control how text is rendered, including fonts, line-heights, and sizes. Everything can be adapted to make a perfect reading environment.</p>
     <p>Images and video are rendered as native components. Elytra carefully strips away all tracking pixels to craft a private reading experience.</p>
-    <p>Platform specific intelligence highlights specific parts of on-screen text like dates, addresses to show additional contextual information.1</p>
+    <p>Platform specific intelligence highlights specific parts of on-screen text like dates, addresses to show additional contextual information.<sup><a href="#fn-ref-intelligence">1</a></sup></p>
     <p>Use full-text search to look up articles down to a single word, or generalise your search to titles of articles.</p>
     <p>Elytra offers image loading options for connectivity types and bandwidth. This is especially useful when reading articles on low-data mode connections.</p>
   </div>
@@ -26,7 +26,7 @@ style: home
     </hgroup>
     <ul id="privacy-notes">
       <li><p>But on the modern web, that’s clearly insufficient. So Elytra goes a step further, and strips all tracking images and scripts from articles, before they are even downloaded to your device.</p></li>
-      <li><p>All images loaded in Elytra are routed through an image proxy, so your images are downloaded without ever revealing your devices.</p></li>
+      <li><p>All images loaded in Elytra are routed through an image proxy, so your images are downloaded without ever revealing your devices.<sup><a href="#fn-ref-imageproxy">2</a></sup></p></li>
       <li><p>Videos are only ever loaded directly from source, including Youtube channels, completely restricting tracking of any kind.</p></li>
     </ul>
   </div>
@@ -111,12 +111,20 @@ style: home
       </div>
       <div>
         <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/smartFolders-dark.png 1x, /assets/images/home/smartFolders-dark@2x.png 2x, /assets/images/home/smartFolders-dark@3x.png 3x">
           <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="503" height="237" alt="Smart Folder editor window from Elytra for macOS"/>
         </picture>
       </div>
     </div>
   </div>
 </div>
+
+<aside id="footnotes" class="container center">
+  <ol>
+    <li id="fn-ref-intelligence"><p>Platform specific intelligence features are available on macOS. Some features like telephone numbers and address parsing are also available on iOS and iPadOS.</p></li>
+    <li id="fn-ref-imageproxy"><p>Loading images via the image proxy can be toggled at any time.</p></li>
+  </ol>
+</aside>
 
 <script>
 const inViewport = (entries, observer) => {
