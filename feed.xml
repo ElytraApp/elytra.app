@@ -9,7 +9,7 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <image>
-      <url>{{ "/assets/images/appicon/appicon@2x.png" | absolute_url }}</url>
+      <url>{{ "/assets/images/appicon/apple-touch-icon.png" | absolute_url }}</url>
       <title>{{ site.title | xml_escape }}</title>
       <link>{{ site.url }}{{ site.baseurl }}/</link>
       <width>128</width>
@@ -24,7 +24,7 @@ layout: null
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
         <description>{{ post.content | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <author>{{ "support@pockity.app (Nikhil)" | xml_escape }}</author>
+        <author>{{ "support@elytra.app (Nikhil)" | xml_escape }}</author>
         {%- if post.bannerImage -%}
         <media:content url="{{ post.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
         {%- endif -%}
