@@ -25,8 +25,8 @@ layout: null
       "external_url": "{{ post.link }}",{% endif %}{% if post.layout != "micro" %}
       "title": {{ post.title | jsonify }},{% endif %}
       "content_html": {{ post.content | jsonify }},
-      "date_published": "{{ post.date | date: "%FT%H:%M:%S%z" }}",{%- if post.bannerImage -%}
-      "banner_image": "{{ post.bannerImage | append: '-1200w.png' | absolute_url }}"{%- endif -%}
+      "date_published": "{{ post.date | date: "%FT%H:%M:%S%z" }}"{%- if post.bannerImage -%}
+      ,"banner_image": "{{ post.bannerImage | append: '-1200w.png' | absolute_url }}"{%- endif -%}
     }{% unless forloop.last %},{% endunless %}{% endfor %}
   ]
 }
