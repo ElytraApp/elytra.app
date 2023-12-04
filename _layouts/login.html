@@ -2,6 +2,21 @@
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
 {%- include head.html -%}
 <body class="login">
+  <div id="login-contents">
+    <header class="container readable center">
+      <div>
+        <picture>
+          <img src="/assets/images/appicon/appicon@2x.png" srcset="/assets/images/appicon/appicon@3x.png 2x" width="120" height="120"/>
+        </picture>
+      </div>
+    </header>
+    <main >
+      <section class="container readable center">
+        <h4>You can now close this window</h4>
+        <p>Authentication will be further completed by the app</p>
+      </section>
+    </main>
+  </div>
   <script>
     const url = new URL(window.location);
     const code = url.searchParams.get("code")
@@ -9,10 +24,4 @@
 
     window.location.href = `elytra://appleIDAuth?code=${code}&state=${state}`
   </script>
-  <main>
-    <hgroup>
-      <h3>You can now close this window</h3>
-      <p>Authentication will be further completed by the app.</p>
-    </hgroup>
-  </main>
 </body>
