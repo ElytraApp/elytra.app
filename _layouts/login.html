@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
+{%- include head.html -%}
+<body class="login">
+  <script>
+    const url = new URL(window.location);
+    const code = url.searchParams.get("code")
+    const state = url.searchParams.get("state")
+
+    window.location.href = `elytra://appleIDAuth?code=${code}&state=${state}`
+  </script>
+  <main>
+    <hgroup>
+      <h3>You can now close this window</h3>
+      <p>Authentication will be further completed by the app.</p>
+    </hgroup>
+  </main>
+</body>
