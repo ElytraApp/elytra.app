@@ -2,6 +2,12 @@ body.home {
   max-width: 100vw;
   overflow-x: hidden;
 
+  picture#appicon {
+    display: block;
+    height: 170px;
+    transform: translateX(-12px);
+  }
+
   main {
     max-width: 100vw;
     overflow-x: hidden;
@@ -21,7 +27,6 @@ body.home {
     .section-header-xl {
       font-size: 3.175rem;
       font-weight: 1000;
-      margin-top: -1rem;
       margin-bottom: 0;
     }
 
@@ -43,6 +48,7 @@ body.home {
     text-align: center;
     position: relative;
     z-index: 1;
+    display: block;
 
     margin-top: 4.62rem;
 
@@ -136,9 +142,22 @@ body.home {
     }
   }
 
-  #subs {
-    picture, .grid {
-      margin-top: 40px;
+  #subs-media {
+    picture {
+      display: block;
+      max-width: 100vw;
+    }
+
+    img {
+      max-width: 100vw;
+      height: 463px;
+      display: inline-block;
+      object-fit: cover
+    }
+
+    .grid {
+      margin-block-start: 2rem;
+      margin-block-end: 2rem;
     }
   }
 
@@ -288,6 +307,26 @@ body.home {
       grid-row-gap: 1rem;
     }
 
+    picture#appicon {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      transform: translateX(-8px);
+    }
+
+    > header {
+      .section-header-xl {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 0;
+      }
+
+      .subhead {
+        font-size: 1.3rem;
+        line-height: 1.4;
+      }
+    }
+
     #smartfolders {
       max-width: 503px;
 
@@ -309,8 +348,14 @@ body.home {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1210px) {
   body.home {
+    #subs-media {
+      img {
+        max-width: 100vw;
+        height: auto;
+      }
+    }
   }
 }
 

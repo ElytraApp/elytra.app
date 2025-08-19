@@ -47,7 +47,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture>
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-mac-dark.png 1x, /assets/images/home/screens-mac-dark@2x.png 2x, /assets/images/home/screens-mac-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-mac.png" srcset="/assets/images/home/screens-mac@2x.png 2x, /assets/images/home/screens-mac@3x.png 3x" width="1322" height="847" alt="Elytra for macOS"/>
+                  <img src="/assets/images/home/screens-mac.png" srcset="/assets/images/home/screens-mac@2x.png 2x, /assets/images/home/screens-mac@3x.png 3x" width="1322" height="793" alt="Elytra for macOS"/>
                 </picture>
               </div>
             </div>
@@ -57,7 +57,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture style="display: block; text-align: center;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ios-dark.png 1x, /assets/images/home/screens-ios-dark@2x.png 2x, /assets/images/home/screens-ios-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-ios.png" srcset="/assets/images/home/screens-ios@2x.png 2x, /assets/images/home/screens-ios@3x.png 3x" width="430" height="537" alt="Elytra for iOS"/>
+                  <img src="/assets/images/home/screens-ios.png" srcset="/assets/images/home/screens-ios@2x.png 2x, /assets/images/home/screens-ios@3x.png 3x" width="394" height="575" alt="Elytra for iOS"/>
                 </picture>
               </div>
             </div>
@@ -67,7 +67,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture style="display: block; text-align: center; vertical-align: bottom; position: relative; bottom: 500px;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ipad-dark.png 1x, /assets/images/home/screens-ipad-dark@2x.png 2x, /assets/images/home/screens-ipad-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="572" height="824" alt="Elytra for iPadOS" />
+                  <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="787" height="824" alt="Elytra for iPadOS" />
                 </picture>
               </div>
             </div>
@@ -78,26 +78,27 @@ style: home
   </div>
 </div>
 
-<div class="container" id="subs">
+<div class="container clear-bot" id="subs">
   <div class="container readable center">
     <hgroup>
       <h2 class="section-heading">One Subscription, Syncs Everywhere</h2>
       <h3 class="subhead">Elytra uses its own cloud service to fetch and sync articles across all of your devices running iOS, iPadOS and macOS.</h3>
     </hgroup>
   </div>
+</div>
 
+<div id="subs-media">
   <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-lockup-large-400w.png 1x, /assets/images/home/hero-lockup-large-800w.png 2x, /assets/images/home/hero-lockup-large-1600w.png 3x">
-    <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: light)" srcset="/assets/images/home/hero-800w.png 1x, /assets/images/home/hero-lockup-large-1600w.png 2x, /assets/images/home/hero-lockup-large@3x.png 3x">
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-lockup-large-dark-400w.png 1x, /assets/images/home/hero-lockup-large-dark-800w.png 2x, /assets/images/home/hero-lockup-large-dark@2x.png 3x">
-    <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-lockup-large-dark-800w.png 1x, /assets/images/home/hero-lockup-large-dark@2x.png 2x">
-    <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-lockup-large-dark.png 1x, /assets/images/home/hero-lockup-large-dark@2x.png 2x, /assets/images/home/hero-lockup-large-dark@3x.png 3x">
-    <img src="/assets/images/home/hero-lockup-large.png" srcset="/assets/images/home/hero-lockup-large@2x.png 2x, /assets/images/home/hero-lockup-large@3x.png 3x" width="1127" height="463" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS."/>
+    <source media="(max-width: 600px)" srcset="/assets/images/home/hero-lockup-large-400w.png 1x, /assets/images/home/hero-lockup-large-800w.png 2x, /assets/images/home/hero-lockup-large-1600w.png 3x">
+    <source media="(min-width: 601px) and (max-width: 800px)" srcset="/assets/images/home/hero-800w.png 1x, /assets/images/home/hero-lockup-large-1600w.png 2x, /assets/images/home/hero-lockup-large@3x.png 3x">
+    <img src="/assets/images/home/hero-lockup-large.png" srcset="/assets/images/home/hero-lockup-large@2x.png 2x, /assets/images/home/hero-lockup-large@3x.png 3x" width="1851" height="463" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS."/>
   </picture>
 
-  <div class="grid">
-    <div><p>Elytra is free to try, forever, with a limit of up to 10 feeds in your subscriptions list. No other features are locked.</p></div>
-    <div><p>You can choose from a monthly or yearly subscription (with a 7-day free trial) or a lifetime unlock of the app to remove limits.</p></div>
+  <div class="container">
+    <div class="grid">
+      <div><p>Elytra is free to try, forever, with a limit of up to 10 feeds in your subscriptions list. No other features are locked.</p></div>
+      <div><p>You can choose from a monthly or yearly subscription (with a 7-day free trial) or a lifetime unlock of the app to remove limits.</p></div>
+    </div>
   </div>
 </div>
 
