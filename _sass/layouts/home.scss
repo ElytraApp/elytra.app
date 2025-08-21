@@ -124,15 +124,34 @@ body.home {
   }
 
   #screens {
+    .cards-container .cards-scroller {
+      scroll-snap-type: x mandatory;
+      scroll-padding: 50%;
+
+      ul li {
+        scroll-snap-align: center;
+
+        &:nth-child(2) picture {
+          transform: translateY(5%);
+        }
+      }
+    }
+
     .cards-container.tall {
       li {
-        width: calc(100% - 45vw);
+        width: 100%;
         max-width: 754px;
-        max-height: 396px;
+        max-width: calc(100vw - 10rem);
+
+        height: 100%;
+        height: calc(100vh - 10rem);
+        max-height: 680px;
 
         .card-item-content {
           overflow: hidden;
-          max-height: 396px;
+          height: 100vh;
+          height: calc(100vh - 10rem);
+          max-height: 680px;
         }
       }
     }

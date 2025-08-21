@@ -65,7 +65,7 @@ style: home
           <li>
             <div>
               <div class="card-item-content shadowed interactive">
-                <picture style="display: block; text-align: center; vertical-align: bottom; position: relative; bottom: 500px;">
+                <picture style="display: block; text-align: center; vertical-align: bottom; position: relative; bottom: 190px;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ipad-dark.png 1x, /assets/images/home/screens-ipad-dark@2x.png 2x, /assets/images/home/screens-ipad-dark@3x.png 3x">
                   <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="787" height="824" alt="Elytra for iPadOS" loading="lazy"/>
                 </picture>
