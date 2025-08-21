@@ -1,8 +1,9 @@
 <header>
   <div class="container">
     <div id="logo-title">
-      <picture>
-        <img src="/assets/images/appicon/appicon.png" srcset="/assets/images/appicon/appicon@2x.png 2x, /assets/images/appicon/appicon@3x.png 3x" width="60" height="60"/>
+      <picture id="appicon" style="transform: translateY(0.5rem);">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/appicon-dark.png 1x, /assets/images/home/appicon-dark@2x.png 2x, /assets/images/home/appicon-dark@3x.png 3x"/>
+        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x, /assets/images/home/appicon@3x.png 3x" width="60" height="60" loading="lazy"/>
       </picture>
       <h1><a href="/">{{ site.title }}</a></h1>
     </div>
