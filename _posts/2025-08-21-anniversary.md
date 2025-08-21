@@ -30,7 +30,7 @@ And in July 2018, here we go!
 <picture>
   <source media="(max-width: 600px)" srcset="/assets/2025/08/21/PublicBeta-400w.jpg 1x, /assets/2025/08/21/PublicBeta-800w.jpg 2x, /assets/2025/08/21/PublicBeta-1600w.jpg 3x">
   <source media="(min-width: 601px)" srcset="/assets/images/home/hero-800w.jpg 1x, /assets/2025/08/21/PublicBeta-1600w.jpg 2x, /assets/2025/08/21/PublicBeta@3x.jpg 3x">
-  <img src="/assets/2025/08/21/PublicBeta.jpg" srcset="/assets/2025/08/21/PublicBeta@2x.jpg 2x, /assets/2025/08/21/PublicBeta@3x.jpg 3x" width="1024" height="1504" alt="Public beta invitation website for Elytra, July 2018.">
+  <img src="/assets/2025/08/21/PublicBeta.jpg" srcset="/assets/2025/08/21/PublicBeta@2x.jpg 2x, /assets/2025/08/21/PublicBeta@3x.jpg 3x" width="1024" height="1504" alt="Public beta invitation website for Elytra, July 2018." loading="lazy"/>
 </picture>
 <br />
 Soon after in August 2018, the app was live in on the App Store. Apple initially did not like the idea of an RSS feed reader app offering auto-renewing subscriptions. So they made me use non-renewable subscriptions in the app which was a slight hindrance to users, but they understood, and people started using it. 
@@ -38,7 +38,7 @@ Soon after in August 2018, the app was live in on the App Store. Apple initially
 <picture>
   <source media="(max-width: 600px)" srcset="/assets/2025/08/21/Heading-400w.png 1x, /assets/2025/08/21/Heading-800w.png 2x, /assets/2025/08/21/Heading-1600w.png 3x">
   <source media="(min-width: 601px)" srcset="/assets/images/home/hero-800w.png 1x, /assets/2025/08/21/Heading-1600w.png 2x, /assets/2025/08/21/Heading@3x.png 3x">
-  <img src="/assets/2025/08/21/Heading.png" srcset="/assets/2025/08/21/Heading@2x.png 2x, /assets/2025/08/21/Heading@3x.png 3x" width="1024" height="1504" alt="Elytra v1.0 for iOS, August 2018">
+  <img src="/assets/2025/08/21/Heading.png" srcset="/assets/2025/08/21/Heading@2x.png 2x, /assets/2025/08/21/Heading@3x.png 3x" width="1024" height="1504" alt="Elytra v1.0 for iOS, August 2018" loading="lazy"/>
 </picture>
 <br />
 
@@ -71,10 +71,10 @@ Elytra's backed has also been completely transformed: It now mostly uses Swift, 
 <picture>
   <source media="(max-width: 600px)" srcset="/assets/2025/08/21/ElytraAppIcons-400w.png 1x, /assets/2025/08/21/ElytraAppIcons-800w.png 2x, /assets/2025/08/21/ElytraAppIcons-1600w.png 3x">
   <source media="(min-width: 601px)" srcset="/assets/images/home/hero-800w.png 1x, /assets/2025/08/21/ElytraAppIcons-1600w.png 2x, /assets/2025/08/21/ElytraAppIcons@3x.png 3x">
-  <img src="/assets/2025/08/21/ElytraAppIcons.png" srcset="/assets/2025/08/21/ElytraAppIcons@2x.png 2x, /assets/2025/08/21/ElytraAppIcons@3x.png 3x" width="1024" height="1504" alt="Evolution of Elytra's App icon from 2015 to 2025.">
+  <img src="/assets/2025/08/21/ElytraAppIcons.png" srcset="/assets/2025/08/21/ElytraAppIcons@2x.png 2x, /assets/2025/08/21/ElytraAppIcons@3x.png 3x" width="1024" height="1504" alt="Evolution of Elytra's App icon from 2015 to 2025." loading="lazy"/>
 </picture>
 
 Here's to the next decade of Elytra, and to all the new engineering challenges it will bring me. To end this post, I'll leave you with a sneak peek of the upcoming release of Elytra v2025.9, scheduled for simultaneous release with iOS 26, iPadOS 26, and macOS 26.
 
-<img src="/assets/2025/08/21/1.png" srcset="/assets/2025/08/21/1@2x.png 2x" width="313" height="640" alt="Elytra v2025.9 for iOS 26" />
-<img src="/assets/2025/08/21/2.png" srcset="/assets/2025/08/21/2@2x.png 2x" width="835" height="640" alt="Elytra v2025.9 for iPadOS 26" />
+<img src="/assets/2025/08/21/1.png" srcset="/assets/2025/08/21/1@2x.png 2x" width="313" height="640" alt="Elytra v2025.9 for iOS 26" loading="lazy"/>
+<img src="/assets/2025/08/21/2.png" srcset="/assets/2025/08/21/2@2x.png 2x" width="835" height="640" alt="Elytra v2025.9 for iPadOS 26" loading="lazy"/>

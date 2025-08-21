@@ -47,7 +47,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture>
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-mac-dark.png 1x, /assets/images/home/screens-mac-dark@2x.png 2x, /assets/images/home/screens-mac-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-mac.png" srcset="/assets/images/home/screens-mac@2x.png 2x, /assets/images/home/screens-mac@3x.png 3x" width="1322" height="847" alt="Elytra for macOS"/>
+                  <img src="/assets/images/home/screens-mac.png" srcset="/assets/images/home/screens-mac@2x.png 2x, /assets/images/home/screens-mac@3x.png 3x" width="1322" height="847" alt="Elytra for macOS" loading="lazy"/>
                 </picture>
               </div>
             </div>
@@ -57,7 +57,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture style="display: block; text-align: center;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ios-dark.png 1x, /assets/images/home/screens-ios-dark@2x.png 2x, /assets/images/home/screens-ios-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-ios.png" srcset="/assets/images/home/screens-ios@2x.png 2x, /assets/images/home/screens-ios@3x.png 3x" width="430" height="537" alt="Elytra for iOS"/>
+                  <img src="/assets/images/home/screens-ios.png" srcset="/assets/images/home/screens-ios@2x.png 2x, /assets/images/home/screens-ios@3x.png 3x" width="430" height="537" alt="Elytra for iOS" loading="lazy"/>
                 </picture>
               </div>
             </div>
@@ -67,7 +67,7 @@ style: home
               <div class="card-item-content shadowed interactive">
                 <picture style="display: block; text-align: center; vertical-align: bottom; position: relative; bottom: 500px;">
                   <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/screens-ipad-dark.png 1x, /assets/images/home/screens-ipad-dark@2x.png 2x, /assets/images/home/screens-ipad-dark@3x.png 3x">
-                  <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="572" height="824" alt="Elytra for iPadOS" />
+                  <img src="/assets/images/home/screens-ipad.png" srcset="/assets/images/home/screens-ipad@2x.png 2x, /assets/images/home/screens-ipad@3x.png 3x" width="572" height="824" alt="Elytra for iPadOS" loading="lazy"/>
                 </picture>
               </div>
             </div>
@@ -92,7 +92,7 @@ style: home
     <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-lockup-large-dark-400w.png 1x, /assets/images/home/hero-lockup-large-dark-800w.png 2x, /assets/images/home/hero-lockup-large-dark@2x.png 3x">
     <source media="(min-width: 601px) and (max-width: 800px) and (prefers-color-scheme: dark)" srcset="/assets/images/home/hero-lockup-large-dark-800w.png 1x, /assets/images/home/hero-lockup-large-dark@2x.png 2x">
     <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-lockup-large-dark.png 1x, /assets/images/home/hero-lockup-large-dark@2x.png 2x, /assets/images/home/hero-lockup-large-dark@3x.png 3x">
-    <img src="/assets/images/home/hero-lockup-large.png" srcset="/assets/images/home/hero-lockup-large@2x.png 2x, /assets/images/home/hero-lockup-large@3x.png 3x" width="1127" height="463" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS."/>
+    <img src="/assets/images/home/hero-lockup-large.png" srcset="/assets/images/home/hero-lockup-large@2x.png 2x, /assets/images/home/hero-lockup-large@3x.png 3x" width="1127" height="463" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS." loading="lazy"/>
   </picture>
 
   <div class="grid">
@@ -112,7 +112,7 @@ style: home
       <div>
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/smartFolders-dark.png 1x, /assets/images/home/smartFolders-dark@2x.png 2x, /assets/images/home/smartFolders-dark@3x.png 3x">
-          <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="503" height="237" alt="Smart Folder editor window from Elytra for macOS"/>
+          <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="503" height="237" alt="Smart Folder editor window from Elytra for macOS" loading="lazy"/>
         </picture>
       </div>
     </div>
