@@ -105,15 +105,15 @@ style: home
 <div class="container center" id="smartfolders">
   <div>
     <div class="grid">
-      <div>
+      <div style="margin: auto 0;">
         <h3>Power of Smart Folders</h3>
         <p>Smart folders enable powerful automations for grouping articles matching specific criteria and immediately notifying you about them.</p>
         <p>You can create smart folders to match interests, topics, subjects, and set them to only look at specific folders or entirely ignore some.</p>
       </div>
-      <div>
+      <div style="margin-bottom: 0;">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/smartFolders-dark.png 1x, /assets/images/home/smartFolders-dark@2x.png 2x, /assets/images/home/smartFolders-dark@3x.png 3x">
-          <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="503" height="237" alt="Smart Folder editor window from Elytra for macOS" loading="lazy"/>
+          <img src="/assets/images/home/smartFolders.png" srcset="/assets/images/home/smartFolders@2x.png 2x, /assets/images/home/smartFolders@3x.png 3x" width="573" height="426" alt="Smart Folder editor window from Elytra for macOS" loading="lazy"/>
         </picture>
       </div>
     </div>
