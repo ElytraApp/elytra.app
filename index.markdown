@@ -126,21 +126,3 @@ style: home
     <li id="fn-ref-imageproxy"><p>Loading images via the image proxy can be toggled at any time.</p></li>
   </ol>
 </aside>
-
-<script>
-const inViewport = (entries, observer) => {
-  entries.forEach(entry => {
-    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-  });
-};
-
-const Obs = new IntersectionObserver(inViewport);
- //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
-const obsOptions = {};
-
-// Attach observer to every [data-inviewport] element:
-const ELSinViewport = document.querySelectorAll('[data-inviewport]');
-ELSinViewport.forEach(EL => {
-  Obs.observe(EL, obsOptions);
-});
-</script>

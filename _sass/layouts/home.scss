@@ -254,6 +254,21 @@ body.home {
       margin-bottom: 1rem;
     }
   }
+
+  .header-explore {
+    max-width: 48ch;
+    margin-top: 5rem;
+
+    button {
+      margin: 0 auto;
+      font-weight: 800;
+    }
+
+    .caption {
+      margin-top: 1rem;
+      font-size: 0.6rem;
+    }
+  }
 }
 
 @media (max-width: 414px) and (orientation: portrait) {
