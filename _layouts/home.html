@@ -6,9 +6,9 @@
   {%- include nav.html -%}
   <header>
     <div class="container">
-      <picture>
-        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x" width="200" height="200"/>
-        <source media="(max-width: 600px)" srcset="/assets/images/home/appicon-half.png 1x, /assets/images/home/appicon.png 2x" loading="eager"/>
+      <picture id="appicon">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/appicon-dark.png 1x, /assets/images/home/appicon-dark@2x.png 2x, /assets/images/home/appicon-dark@3x.png 3x"/>
+        <img src="/assets/images/home/appicon.png" srcset="/assets/images/home/appicon@2x.png 2x, /assets/images/home/appicon@3x.png 3x" width="170" height="170" loading="eager"/>
       </picture>
       <hgroup>
         <h1 class="section-header-xl">Elytra</h1>
@@ -24,13 +24,34 @@
       <source media="(prefers-color-scheme: dark)" srcset="/assets/images/home/hero-dark.png 1x, /assets/images/home/screens-dark@2x.png 2x, /assets/images/home/screens-dark@3x.png 3x">
       <img src="/assets/images/home/screens.png" srcset="/assets/images/home/screens@2x.png 2x, /assets/images/home/screens@3x.png 3x" width="1514" height="533" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS." loading="lazy"/>
     </picture>
+
+    {%- include storebuttons.html -%}
   </header>
   <main>
     {{ content }}
   </main>
 
+  {%- include storebuttons.html -%}
+
   {%- include support.html -%}
 
   {%- include footer.html -%}
+  <script>
+    const exploreButtons = document.querySelectorAll(`button[title="Explore Eytra's features"]`);
+    const container = document.querySelector("main h2.section-heading");
+    // console.debug(container, exploreButtons)
+    const clickFn = (evt) => {
+      evt && evt.preventDefault();
+      container && container.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+      });
+    };
+
+    exploreButtons.forEach(elem => {
+      elem.addEventListener("click", clickFn, false);
+    })
+  </script>
 </body>
 </html>

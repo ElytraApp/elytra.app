@@ -3,11 +3,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {%- if page.title -%}
   <title>{{ page.title }} - {{ site.title }}</title>
-  <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
   {%- else -%}
   <title>{{ site.title }}</title>
   <meta property="og:title" content="{{ site.title }}" />
   {%- endif -%}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="supported-color-schemes" content="light dark">
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
+  <link rel="alternate" title="{{ site.title }}" type="application/rss+xml" href="{{ "/feed.xml"  | absolute_url}}"/>
+  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | absolute_url }}" />
+  <meta name="apple-itunes-app" content="app-id=1433266971, app-argument=https://apps.apple.com/in/app/elytra/id1433266971"/>
+  <meta property="og:title" content="{{ page.title }} - {{ site.title }}" />
   {%- if page.excerpt -%}
   <meta name="description" content="{{ page.excerpt | strip_html | strip }}">
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip }}" />
@@ -21,18 +28,11 @@
   {%- if page.bannerImage -%}
   <meta property="og:image" content="{{ page.bannerImage | append: '@2x.png' | absolute_url  }}" />
   {%- elsif post.bannerImage -%}
-  <meta property="og:image" content="{{ post.bannerImage | append: '@2x.png' | relative_url }}" />
+  <meta property="og:image" content="{{ post.bannerImage | append: '@2x.png' | absolute_url }}" />
   {%- else -%}
   <meta property="og:image" content="{{ "/assets/images/home/hero-lockup-large.png" | absolute_url }}" />
   {%- endif -%}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="supported-color-schemes" content="light dark">
-  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | absolute_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
   <link rel="me" href="https://social.dezinezync.com/@elytra"/>
-  <link rel="alternate" title="{{ site.title }}" type="application/rss+xml" href="{{ "/feed.xml"  | absolute_url}}"/>
-  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | absolute_url }}" />
-  <meta name="apple-itunes-app" content="app-id=1433266971, app-argument=https://apps.apple.com/in/app/elytra/id1433266971">
   <link rel="icon" sizes="180x180" href="{{ "/assets/images/appicon/apple-touch-icon-180x180.png" | absolute_url }}" />
   <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/images/appicon/apple-touch-icon-180x180.png" | absolute_url }}" />
   <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/images/appicon/apple-touch-icon-152x152.png" | absolute_url }}" />
