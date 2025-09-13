@@ -6,26 +6,28 @@
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   <main>
     <hr />
-    <div class="container readable">
-      <article class="page-content no-style"> 
+    <article class="page-content no-style"> 
+      <div class="container readable">
         <h2>{{ page.title | escape }}</h2>
         <div><small class="post-meta">{{ page.date | date: date_format }}</small><br /><br /></div>
         {%- if page.bannerImage -%}
+        </div>
           <picture id="post-banner">
             <source media="(max-width: 600px)" srcset="{{ page.bannerImage | append: '-400w.png' | absolute_url }} 1x, {{ page.bannerImage | append: '-800w.png' | absolute_url }} 2x, {{ page.bannerImage | append: '-1600w.png' | absolute_url }} 3x">
             <source media="(min-width: 601px) and (max-width: 800px)" srcset="{{ page.bannerImage | append: '-800w.png' | absolute_url }} 1x, {{ page.bannerImage | append: '-1600w.png' | absolute_url }} 2x, {{ page.bannerImage | append: '@3x.png' | absolute_url }} 3x">
             <img src="{{ page.bannerImage | append: '.png' | absolute_url }}" srcset="{{ page.bannerImage | append: '@2x.png' | absolute_url }} 2x, {{ page.bannerImage | append: '@3x.png' | absolute_url }} 3x" loading="lazy"/>
           </picture>
+          <div class="container readable">
         {%- endif -%}
         <div class="article-content">
           {{ content }}
         </div>
-      </article>
+      </div>
 
-      <section class="page-post-content">
+      <section class="page-post-content container readable">
         <a href="#" onclick="window.history.back();">Back</a>
       </section>
-    </div>
+    </article>
   </main>
 
   <div class="container readable">

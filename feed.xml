@@ -23,9 +23,11 @@ layout: null
         <title>{{ post.title | xml_escape }}</title>
         <link>{{ post.url | absolute_url }}</link>
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
-        <description>{{ post.content | xml_escape }}</description>
+        <description><![CDATA[
+        {{ post.content }}
+        ]]></description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <author>{{ "support@elytra.app (Nikhil)" | xml_escape }}</author>
+        <author>{{ "support@pockity.app (Nikhil)" | xml_escape }}</author>
         {%- if post.bannerImage -%}
         <media:content url="{{ post.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
         {%- endif -%}
