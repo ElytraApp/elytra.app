@@ -25,7 +25,7 @@ layout: null
       <height>128</height>
     </image>
     <link rel="self" href="{{ "/feed.xml" | absolute_url }}" xmlns="http://www.w3.org/2005/Atom"/>
-    <link rel="hub" href="https://pubsubhubbub.appspot.com" xmlns="http://www.w3.org/2005/Atom"/>
+    <link rel="hub" href="https://websubhub.com/hub" xmlns="http://www.w3.org/2005/Atom"/>
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>

@@ -16,7 +16,7 @@ layout: null
   "language": "en-IN",
   "hubs": [{
     "type": "WebSub",
-    "url": "https://pubsubhubbub.appspot.com"
+    "url": "https://websubhub.com/hub"
   }],
   "items": [{% for post in site.posts limit:10 %}
     {
