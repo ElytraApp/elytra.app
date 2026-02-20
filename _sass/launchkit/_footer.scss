@@ -1,0 +1,7 @@
+footer {
+  color: var(--dz-subtext-color);
+
+  *:not(a) {
+    color: inherit;
+  }
+}

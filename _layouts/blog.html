@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
 {%- include "head.html" -%}
-<body class="{% if page.style %}{{ page.style }}{% endif %} blog">
+<body class="{% if style %}{{ style }} {% endif %}blog">
   {%- include "blogHeader.html" -%}
   <main>
     {%- if pagination.items.length > 0 -%}
     <ul class="post-list">
       {%- for post in pagination.items -%}
       <hr />
-      <li class="container readable">
+      <li class="container readable"><div>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <h3>
           <a class="post-link" href="{{ post.url | absolute_url }}">
@@ -17,7 +17,7 @@
         </h3>
         <small class="post-meta">{{ post.date | date: date_format }}</small>
         {{ post.content | truncatewords: 50 }}
-      </li>
+      </div></li>
       {%- endfor -%}
     </ul>
     {% if pagination.pages.length > 1 %}

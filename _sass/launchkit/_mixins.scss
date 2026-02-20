@@ -1,0 +1,19 @@
+/*
+ * Creates a linear gradient for the text element
+ */ 
+@mixin gradient-text-linear($angle, $start, $end) {
+  background: -webkit-linear-gradient($angle, $start, $end);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+ * transition used for simple interactive gestures like hover 
+ */ 
+@mixin interactive-transition {
+  transition: all .3s cubic-bezier(0,0,.5,1);
+}
+
+@mixin interactive-scale {
+  transform: scale3d(1.01, 1.01, 1.01);
+}

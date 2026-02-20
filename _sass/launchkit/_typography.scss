@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6 {
+	// pico overrides
+  --typography-spacing-vertical: 0.5rem;
+}
+
+[class*="heading"], h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -0.009em;
+	font-weight: 600;
+	line-height: 1.0625;
+}
+
+.heading-small {
+	line-height: 1.1425;
+	letter-spacing: 0.007em;
+}
+
+p {
+	line-height: 1.47059;
+	letter-spacing: -0.022em;
+}
+
+.emphasis {
+	font-size: 18pt;
+}
+
+.footnote {
+	font-size: 9pt;
+	line-height: 1.33337;
+	letter-spacing: -0.01em;
+}
+
+/* Large Sizes */
+[class*="section-header-"] {
+	line-height: 1.05;
+	letter-spacing: -.085rem;
+	margin-bottom: 1.25rem;
+}
+
+.section-header-xxl {
+	font-size: 60pt;
+}
+
+.section-header-xl {
+	font-size: 42pt;
+}
+
+.section-header-l {
+	font-size: 36pt;
+}
+
+.section-header-m {
+	font-size: 30pt;
+}
+
+.section-header-s {
+	font-size: 24pt;
+}
+
+@media (max-width: 767px) {
+  .section-header-xxl {
+    font-size: 5rem;
+  }
+
+  .section-header-xl {
+    font-size: 4.2rem;
+  }
+
+  .section-header-l {
+    font-size: 3.75rem;
+  }
+
+  .section-header-m {
+    font-size: 3rem;
+  }
+
+  .section-header-s {
+    font-size: 2rem;
+  }
+}

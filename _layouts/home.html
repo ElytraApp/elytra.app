@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
 {%- include "head.html" -%}
 <link rel="me" href="https://social.dezinezync.com/@elytra" />
-<body class="{% if page.style %}{{ page.style }}{% endif %}">
+<body{% if style %} class="{{ style }}"{% endif %}>
   {%- include "nav.html" -%}
   <header>
     <div class="container">

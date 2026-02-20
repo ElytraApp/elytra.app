@@ -1,0 +1,117 @@
+.hero {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  hgroup {
+    flex: 1 1 33.3333%;
+    align-self: center;
+    margin-bottom: 0;
+
+    z-index: 2;
+
+    p.short-margin {
+      margin-bottom: calc(0.25 * var(--typography-spacing-vertical));
+    }
+  }
+
+  .hero-image {
+    position: relative;
+
+    img {
+      z-index: 1;
+      max-width: unset;
+      height: unset;
+    }
+
+    &.top {
+      img {
+        vertical-align: top;
+      }
+    }
+
+    &.center {
+      img {
+        vertical-align: center;
+      }
+    }
+
+    &.bottom {
+      img {
+        vertical-align: bottom;
+      }
+    }
+
+    &.trailing {
+      margin-left: auto;
+    }
+  }
+}
+
+.hero.ltr {
+  /* text */
+  > div:first-of-type {
+    max-width: 33.3333%;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 var(--spacing);
+  }
+
+  /* image */
+  > div:last-of-type {
+    max-width: 66.6666%;
+
+    // display: flex;
+    // align-items: flex-end;
+  }
+}
+
+.hero.ltr.xl-padding {
+  > div:first-of-type {
+    padding: 0 calc(2 * var(--spacing));
+  }
+}
+
+.hero.rounded {
+  border-radius: 20pt;
+}
+
+.hero.stacked {
+  display: grid;
+  place-items: center;
+  grid-template-areas: "inner-div";
+
+  .hero-image {
+    z-index: 0;
+    
+    img {
+      width: 100vw;
+      height: auto;
+    }
+  }
+
+  > * {
+    grid-area: inner-div;
+    z-index: 1;
+  }
+
+}
+
+[class*="container"] {
+  &.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid.no-padding > .hero.grid {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+}

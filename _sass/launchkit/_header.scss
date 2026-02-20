@@ -1,0 +1,53 @@
+header {
+	#logo-title {
+		display: flex;
+		flex-direction: row;
+		padding: calc(1rem * 2) 0 1rem;
+
+		picture {
+			width: 60px;
+			height: 60px;
+
+			margin-right: 1rem;
+		}
+
+		h1 {
+			@include interactive-transition;
+
+			&:hover {
+				@include interactive-scale;
+			}
+
+			a {
+				color: inherit;
+				display: inline-block;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+			span {
+				color: var(--dz-subtitle-color);
+			}
+		}
+	}
+}
+
+a, [role="link"] {
+  color: var(--dz-brand-color, var(--primary));
+}
+
+[role="button"], button {
+  background-color: var(--dz-brand-color, var(--primary)); 
+  border-color: var(--dz-brand-color, var(--border-color)); 
+}
+
+a, [role="link"], [role="button"] {
+  @include interactive-transition;
+
+  &:hover {
+    opacity: 0.9;
+    transform: scale(1.025);
+  }
+}

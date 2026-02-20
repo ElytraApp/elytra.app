@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+// Import Pico
+@import 
+  "../node_modules/@picocss/pico/scss/pico"
+;
+
+:root {
+  --dz-column-unit: 60px;
+  --dz-spacing-unit: 10px;
+
+  --dz-background-color: #fff;
+  --dz-grouped-background-color: #f5f5f7;
+  --dz-title-color: #1d1d1f;
+  --dz-text-color: #1d1d1f;
+  --dz-subtitle-color: #75758A;
+  --dz-subtext-color: #6e6e73;
+
+  --dz-brand-color: #2EA7BD;
+  --dz-border-color: #d2d2d7;
+
+  --dz-card-color: #fff;
+  --dz-card-shadow: rgba(0,0,0,.08);
+  --dz-card-shadow-hover: rgba(0,0,0,.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dz-background-color: #111;
+    --dz-grouped-background-color: #2c2c2c;
+    --dz-title-color: #fff;
+    --dz-text-color: #ccc;
+    --dz-subtitle-color: #aaa;
+    --dz-subtext-color: #aaa;
+
+    --dz-brand-color: #2EA7BD;
+    --dz-border-color: rgba(87, 88, 107, 0.7);
+
+    --dz-card-color: #3c3c3f;
+    --dz-card-shadow: rgba(0,0,0,.12);
+    --dz-card-shadow-hover: rgba(0,0,0,.18);
+  }
+}
+
+body {
+  --font-size: 14pt;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
+  background-color: var(--dz-background-color);
+}
+
+body.grouped {
+  background-color: var(--dz-grouped-background-color);
+}
+
+html:has(body.grouped) {
+  background-color: var(--dz-grouped-background-color);
+}
+
+body > header, body > main, body > footer {
+  padding: 0;
+}
+
+@media only screen and (min-width: 601px) {
+  .external-link {
+    &:after { 
+      content: " ↪";
+      vertical-align: middle;
+    }   
+  }
+}
+
+// Import partials.
+@import
+  "launchkit/_layout"
+;

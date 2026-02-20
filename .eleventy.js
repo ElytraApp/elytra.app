@@ -8,7 +8,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSass, {
     sassOptions: {
-      loadPaths: [path.join(__dirname, "_sass")],
+      loadPaths: [
+        path.join(__dirname, "_sass"),
+        path.join(__dirname, "node_modules")
+      ],
     },
   });
 
@@ -55,8 +58,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("absolute_url", function(url) {
-    const isServe = process.env.ELEVENTY_RUN_MODE === "serve" || 
-                    (process.argv && (process.argv.includes("--serve") || process.argv.includes("-s")));
+    const isServe = process.argv && (process.argv.includes("--serve") || process.argv.includes("-s"));
     const siteUrl = isServe ? "http://localhost:8080" : "https://elytra.app";
     
     if (!url) return siteUrl;
@@ -65,7 +67,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("relative_url", function(url) {
-    const baseUrl = ""; // baseurl is empty in config
+    const isServe = process.argv && (process.argv.includes("--serve") || process.argv.includes("-s"));
+    const baseUrl = ""; 
     if (!url) return baseUrl;
     return baseUrl + (url.startsWith("/") ? "" : "/") + url;
   });
