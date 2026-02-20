@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /feed.json
 ---
 {
   "version": "https://jsonfeed.org/version/1.1",
@@ -18,15 +19,15 @@ layout: null
     "type": "WebSub",
     "url": "https://websubhub.com/hub"
   }],
-  "items": [{% for post in site.posts limit:10 %}
+  "items": [{% for post in collections.posts limit:10 %}
     {
       "id": "{{ site.url}}{{ post.url }}",
-      "url": "{{ site.url }}{{ post.url }}",{% if post.link %}
-      "external_url": "{{ post.link }}",{% endif %}{% if post.layout != "micro" %}
-      "title": {{ post.title | jsonify }},{% endif %}
-      "content_html": {{ post.content | jsonify }},
-      "date_published": "{{ post.date | date: "%FT%H:%M:%S%z" }}"{%- if post.bannerImage -%}
-      ,"banner_image": "{{ post.bannerImage | append: '-1200w.png' | absolute_url }}"{%- endif -%}
+      "url": "{{ site.url }}{{ post.url }}",{% if post.data.link %}
+      "external_url": "{{ post.data.link }}",{% endif %}{% if post.data.layout != "micro" %}
+      "title": {{ post.data.title | jsonify }},{% endif %}
+      "content_html": {{ post.templateContent | jsonify }},
+      "date_published": "{{ post.date | date: "%Y-%m-%dT%H:%M:%S%z" }}"{%- if post.data.bannerImage -%}
+      ,"banner_image": "{{ post.data.bannerImage | append: '-1200w.png' | absolute_url }}"{%- endif -%}
     }{% unless forloop.last %},{% endunless %}{% endfor %}
   ]
 }

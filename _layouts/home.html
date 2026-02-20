@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
+{%- include "head.html" -%}
 <link rel="me" href="https://social.dezinezync.com/@elytra" />
 <body class="{% if page.style %}{{ page.style }}{% endif %}">
-  {%- include nav.html -%}
+  {%- include "nav.html" -%}
   <header>
     <div class="container">
       <picture id="appicon">
@@ -25,17 +25,17 @@
       <img src="/assets/images/home/screens.png" srcset="/assets/images/home/screens@2x.png 2x, /assets/images/home/screens@3x.png 3x" width="1514" height="533" alt="Elytra's timeline and article reader displayed on iPad, iPhone and macOS." loading="lazy"/>
     </picture>
 
-    {%- include storebuttons.html -%}
+    {%- include "storebuttons.html" -%}
   </header>
   <main>
     {{ content }}
   </main>
 
-  {%- include storebuttons.html -%}
+  {%- include "storebuttons.html" -%}
 
-  {%- include support.html -%}
+  {%- include "support.html" -%}
 
-  {%- include footer.html -%}
+  {%- include "footer.html" -%}
   <script>
     const exploreButtons = document.querySelectorAll(`button[title="Explore Eytra's features"]`);
     const container = document.querySelector("main h2.section-heading");

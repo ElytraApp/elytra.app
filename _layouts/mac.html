@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
+{%- include "head.html" -%}
 <body class="{% if page.style %}{{ page.style }}{% endif %}">
   <header>
     <div class="container">
@@ -12,7 +12,7 @@
       <h2 class="subhead"><span>{{ site.description }}</span></h2>
     </div>
 
-    {%- include storebuttons.html -%}
+    {%- include "storebuttons.html" -%}
   </header>
   <main>
     {{ content }}

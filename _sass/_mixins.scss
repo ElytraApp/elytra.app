@@ -1,0 +1,7 @@
+@mixin gradient-text-linear($direction, $colors...) {
+  background: linear-gradient($direction, $colors);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; // Fallback for browsers that don't support text-fill-color
+}

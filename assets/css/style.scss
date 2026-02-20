@@ -1,10 +1,8 @@
----
----
-
-@import "{{ site.theme }}";
-@import "variables";
-@import "buttons";
-@import "layouts/grid";
+// @import "theme";
+@import "../../_sass/variables";
+@import "../../_sass/mixins";
+@import "../../_sass/buttons";
+@import "../../_sass/layouts/grid";
 
 html {
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -202,9 +200,9 @@ nav {
   }
 }
 
-@import "layouts/home";
-@import "layouts/blog";
-@import "layouts/support";
-@import "layouts/mac";
-@import "layouts/custom";
-@import "layouts/login";
+@import "../../_sass/layouts/home";
+@import "../../_sass/layouts/blog";
+@import "../../_sass/layouts/support";
+@import "../../_sass/layouts/mac";
+@import "../../_sass/layouts/custom";
+@import "../../_sass/layouts/login";

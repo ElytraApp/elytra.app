@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en-IN" }}">
-{%- include head.html -%}
+{%- include "head.html" -%}
 <body class="{% if page.style %}{{ page.style }}{% endif %} blog">
-  {%- include blogHeader.html -%}
+  {%- include "blogHeader.html" -%}
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   <main>
     <hr />
@@ -31,8 +31,8 @@
   </main>
 
   <div class="container readable">
-    {%- include footer.html -%}
+    {%- include "footer.html" -%}
   </div>
-  {%- include blogStyler.html -%}
+  {%- include "blogStyler.html" -%}
 </body>
 </html>

@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /feed.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -26,18 +27,18 @@ layout: null
     </image>
     <link rel="self" href="{{ "/feed.xml" | absolute_url }}" xmlns="http://www.w3.org/2005/Atom"/>
     <link rel="hub" href="https://websubhub.com/hub" xmlns="http://www.w3.org/2005/Atom"/>
-    {% for post in site.posts limit:10 %}
+    {% for post in collections.posts limit:10 %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
+        <title>{{ post.data.title | xml_escape }}</title>
         <link>{{ post.url | absolute_url }}</link>
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
         <description><![CDATA[
-        {{ post.content }}
+        {{ post.templateContent }}
         ]]></description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <author>{{ "support@elytra.app (Nikhil)" | xml_escape }}</author>
-        {%- if post.bannerImage -%}
-        <media:content url="{{ post.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
+        {%- if post.data.bannerImage -%}
+        <media:content url="{{ post.data.bannerImage | append: '-1200w.png' | absolute_url }}" medium="image" lang="en"/>
         {%- endif -%}
       </item>
     {% endfor %}

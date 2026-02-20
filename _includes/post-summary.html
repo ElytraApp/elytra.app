@@ -1,0 +1,11 @@
+<hr />
+<li class="container readable">
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  <h3>
+    <a class="post-link" href="{{ post.url | absolute_url }}">
+      {{ post.data.title | escape }}
+    </a>
+  </h3>
+  <small class="post-meta">{{ post.date | date: date_format }}</small>
+  {{ post.templateContent | strip_html | truncatewords: 50 }}
+</li>

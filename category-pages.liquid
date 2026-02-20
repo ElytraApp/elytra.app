@@ -1,0 +1,13 @@
+---
+layout: category
+pagination:
+  data: collections.categories
+  size: 1
+  alias: tag
+permalink: /category/{{ tag | slugify }}/
+---
+{%- comment -%}
+The layout _layouts/category.html uses page.tag, which Eleventy provides via the 'tag' alias in pagination.
+It also uses site.categories[page.tag], which in Eleventy is collections.categories[tag].
+I'll update the layout to be more Eleventy-compatible or just provide the data here.
+{%- endcomment -%}
