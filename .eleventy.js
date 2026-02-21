@@ -132,6 +132,13 @@ module.exports = function (eleventyConfig) {
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy("assets/images");
   eleventyConfig.addPassthroughCopy("assets/icons");
+  eleventyConfig.addPassthroughCopy("assets/2018");
+  eleventyConfig.addPassthroughCopy("assets/2019");
+  eleventyConfig.addPassthroughCopy("assets/2020");
+  eleventyConfig.addPassthroughCopy("assets/2021");
+  eleventyConfig.addPassthroughCopy("assets/2022");
+  eleventyConfig.addPassthroughCopy("assets/2025");
+  eleventyConfig.addPassthroughCopy("assets/2026");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("sitemap.xml");

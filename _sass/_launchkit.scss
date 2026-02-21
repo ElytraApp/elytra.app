@@ -22,6 +22,32 @@
   --dz-card-color: #fff;
   --dz-card-shadow: rgba(0,0,0,.08);
   --dz-card-shadow-hover: rgba(0,0,0,.12);
+
+  /* System-first sans stack (Apple-like feel without shipping proprietary fonts) */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Fluid type scale */
+  --fs-body: clamp(1rem, 0.96rem + 0.25vw, 1.125rem);
+  --fs-small: clamp(0.8125rem, 0.78rem + 0.15vw, 0.9rem);
+  --fs-dek: clamp(1.125rem, 1.04rem + 0.55vw, 1.5rem);
+  --fs-h1: clamp(2rem, 1.45rem + 2.8vw, 3.5rem);
+  --fs-h2: clamp(1.375rem, 1.18rem + 1.2vw, 2rem);
+  --fs-h3: clamp(1.125rem, 1.02rem + 0.6vw, 1.375rem);
+
+  /* Measure & rhythm */
+  --measure: 70ch;
+  --leading-body: 1.65;
+  --leading-head: 1.12;
+
+  /* Subtle, Apple-ish neutrals */
+  --text-1: color-mix(in oklab, CanvasText 92%, Canvas 8%);
+  --text-2: color-mix(in oklab, CanvasText 70%, Canvas 30%);
+  --rule: color-mix(in oklab, CanvasText 18%, Canvas 82%);
+  --link: color-mix(in oklab, #0a66ff 80%, CanvasText 20%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,9 +68,22 @@
   }
 }
 
+html {
+  font-family: var(--font-sans);
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-synthesis: none;
+  font-optical-sizing: auto;
+}
+
 body {
-  --font-size: 14pt;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",sans-serif;
+  margin: 0;
+  color: var(--text-1);
+  background: Canvas;
+  font-size: var(--fs-body);
+  line-height: var(--leading-body);
   background-color: var(--dz-background-color);
 }
 
@@ -58,6 +97,17 @@ html:has(body.grouped) {
 
 body > header, body > main, body > footer {
   padding: 0;
+}
+
+/* Constrain article measure without forcing layout decisions elsewhere */
+// :where(article, main, .article, .newsroom-article) {
+//   max-width: var(--measure);
+// }
+
+:where(article, main, .article, .newsroom-article) :where(p, li) {
+  text-wrap: pretty;
+  hanging-punctuation: first last;
+  hyphens: auto;
 }
 
 @media only screen and (min-width: 601px) {
